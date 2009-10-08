@@ -112,7 +112,7 @@ module Spec
 
         def add_helpers(options) #:nodoc:
           @controller.add_helper("application")
-          @controller.add_helper(derived_controller_name(options))
+          @controller.add_helper(derived_controller_name(options)) unless !options[:implicit_helper] || !options[:implicit_helper].nil
           @controller.add_helper(options[:helper]) if options[:helper]
           options[:helpers].each { |helper| @controller.add_helper(helper) } if options[:helpers]
         end
