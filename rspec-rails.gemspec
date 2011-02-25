@@ -6,5 +6,5 @@ Gem::Specification.new do |s|
   s.homepage = 'http://github.com/weplay/rspec-rails'
   s.summary = 'rspec-rails 1.2.7.rc1'
   s.description = "Behaviour Driven Development for Ruby on Rails."
-  s.files = %w[License.txt Rakefile README.rdoc query_reviewer_defaults.yml] + Dir["lib/**/*"]
+  s.files = %w[License.txt Rakefile README.rdoc] + Dir["lib/**/*"]
 end
